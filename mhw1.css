@@ -1,3 +1,69 @@
+:root {
+    --logo-height: 50px;
+    --top-dim: 18px;
+    --nav-dim: 20px;
+    --theme-color: #EB3957;
+    --top-color: #ACAAA6;
+}
 .logo {
-    height: 50px;
+    height: var(--logo-height);
+}
+.top-logo {
+    height: var(--top-dim);
+    width: var(--top-dim);
+}
+.nav-logo {
+    height: var(--nav-dim);
+    width: var(--nav-dim);
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: roboto, Arial, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-banner {
+    background-color: var(--theme-color);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex: content;
+}
+.header-banner, a{
+    color: white;
+    text-decoration: none;
+}
+.header-top {
+    color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.header-top, .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container, .left-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.container, .right-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.top-item, span{
+    color: var(--top-color);
+}
+.header-nav {
+    text-transform: uppercase;
 }
