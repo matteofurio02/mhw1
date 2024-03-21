@@ -8,6 +8,9 @@
 :-webkit-any(link) {
     cursor: pointer;
 }
+button {
+    cursor: pointer;
+}
 body {
     margin: 0;
     padding: 0;
@@ -24,6 +27,9 @@ p {
 img {
     vertical-align: middle;
     border-style: none;
+}
+ul {
+    list-style: none;
 }
 .header {
     display: flex;
@@ -105,7 +111,6 @@ a{
 .client-service-btn {
     margin: 0 0 1px 29px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     font-weight: 500;
     letter-spacing: .2px;
@@ -131,6 +136,15 @@ a{
 }
 .top-logo {
     height: 18px;
+    filter: invert(12%) sepia(0%) saturate(3555%) hue-rotate(350deg) brightness(94%) contrast(79%);
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-logo {
+    height: 20px;
 }
 .nav-item span {
     color: black;
